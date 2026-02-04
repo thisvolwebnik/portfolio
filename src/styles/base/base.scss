@@ -1,0 +1,44 @@
+@use "../abstracts/" as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: var(--color-white);
+  background-color: var(--color-dark);
+}
+
+a[class] {
+  text-decoration: none;
+}
+
+a,
+button,
+label,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+.container {
+  max-width: var(--container-width);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+:focus-visible {
+  @include focus-visible;
+}

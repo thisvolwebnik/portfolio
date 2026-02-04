@@ -1,0 +1,19 @@
+:root {
+  --color-white: #ffffff;
+  --color-dark: #222222;
+  --color-accent: #ff3c3c;
+
+  // Input&Button
+  --input-height: 60px;
+  --button-height: 60px;
+  --border: 1px solid var(var(var(--color-dark)));
+
+  // Font
+  --font-family-base: "Mulish", sans-serif;
+  --font-family-accent: "Oswald", sans-serif;
+
+  // Container
+  --container-width: 1400px;
+  --container-padding-x: 20px;
+  --transition-duration: 0.2s;
+}
