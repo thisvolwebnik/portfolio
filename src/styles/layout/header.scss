@@ -1,0 +1,31 @@
+@use "../abstracts/" as *;
+
+.header {
+  height: 60px;
+
+  &__inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    &-list {
+      display: flex;
+      align-items: center;
+      list-style-type: none;
+    }
+
+    &-link {
+      padding: 18px 20px;
+      font-family: var(--font-family-accent);
+      font-weight: 400;
+      text-transform: uppercase;
+
+      @include hover {
+        color: var(--color-accent);
+      }
+    }
+  }
+}

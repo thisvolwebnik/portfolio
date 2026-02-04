@@ -32,18 +32,5 @@
     "stylelint-order": "^7.0.1",
     "stylelint-selector-bem-pattern": "^4.0.1",
     "vite": "^7.2.4"
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "*.{css,scss}": [
-      "stylelint --fix",
-      "prettier --write"
-    ],
-    "*.{json,md,html}": [
-      "prettier --write"
-    ]
   }
 }

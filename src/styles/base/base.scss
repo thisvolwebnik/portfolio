@@ -18,6 +18,15 @@ body {
 
 a[class] {
   text-decoration: none;
+  color: inherit;
+}
+
+a,
+button,
+input,
+textarea,
+input {
+  cursor: pointer;
 }
 
 a,

@@ -1,0 +1,14 @@
+@use "../abstracts/" as *;
+
+.logo {
+  &__link {
+    position: relative;
+
+    &::after {
+      @include square(60px);
+      @include abs-center;
+
+      content: "";
+    }
+  }
+}

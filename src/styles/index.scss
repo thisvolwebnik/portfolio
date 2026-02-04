@@ -4,3 +4,9 @@
 // Base
 @use "./base/fonts";
 @use "./base/base";
+
+// Components
+@use "./components/logo";
+
+// Layout
+@use "./layout/header";
