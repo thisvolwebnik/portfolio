@@ -5,7 +5,7 @@
     display: flex;
     column-gap: 42px;
     height: calc(100vh - 60px);
-    padding-block: 60px;
+    padding-block: var(--section-padding-block);
   }
 
   &__vertical {

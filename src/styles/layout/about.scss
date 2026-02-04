@@ -1,0 +1,32 @@
+@use "../abstracts/" as *;
+
+.about {
+  padding-block: var(--section-padding-block);
+  color: var(--color-dark);
+  background-color: var(--color-white);
+
+  &__grid {
+    display: grid;
+    column-gap: 40px;
+
+    &--3-cols {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+
+    &--revers {
+      flex-direction: column-reverse;
+    }
+
+    &-body {
+      display: flex;
+      flex-direction: column;
+      row-gap: 12px;
+    }
+  }
+}
