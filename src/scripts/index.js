@@ -1,3 +1,4 @@
 import "../styles/index.scss";
+import BurgerMenu from "./Components/BurgerMenu";
 
-console.log("Hello World!");
+new BurgerMenu();

@@ -25,14 +25,14 @@
     <title>Portfolio | Professional photographer</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" data-js-header>
       <div class="header__inner container">
         <div class="header__logo logo">
           <a class="logo__link" href="./index.html">
             <img src="./src/assets/icons/logo.svg" alt />
           </a>
         </div>
-        <div class="header__overlay">
+        <div class="header__overlay" data-js-header-overlay>
           <nav class="header__menu">
             <ul class="header__menu-list">
               <li class="header__menu-item">
@@ -53,7 +53,11 @@
             </ul>
           </nav>
         </div>
-        <button class="header__burger-menu burger-menu" type="submit">
+        <button
+          class="header__burger-menu burger-menu"
+          type="submit"
+          data-js-header-burger-button
+        >
           <span class="burger-menu__line"></span>
           <span class="burger-menu__line"></span>
         </button>
