@@ -4,10 +4,26 @@
   height: 60px;
 
   &__inner {
-    height: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  .header__overlay {
+    @include mobile {
+      @include flex-center;
+
+      position: fixed;
+      inset: 60px 0 0 100%;
+      width: 100%;
+      height: calc(100vh - 60px);
+      transition-duration: 0.4s;
+
+      &.is-active {
+        left: 0;
+      }
+    }
   }
 
   &__menu {
@@ -15,6 +31,11 @@
       display: flex;
       align-items: center;
       list-style-type: none;
+
+      @include mobile {
+        flex-direction: column;
+        row-gap: 36px;
+      }
     }
 
     &-link {
