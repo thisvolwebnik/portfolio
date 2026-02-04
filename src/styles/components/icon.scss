@@ -1,0 +1,22 @@
+@use "../abstracts/" as *;
+
+.icon {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: currentColor;
+    mask-size: cover;
+    mask-size: cover;
+  }
+
+  &--arrow-down {
+    &::after {
+      @include square(24px);
+
+      mask-image: url("../../assets/icons/arrow-down.svg");
+      mask-image: url("../../assets/icons/arrow-down.svg");
+    }
+  }
+}

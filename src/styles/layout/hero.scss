@@ -1,0 +1,78 @@
+@use "../abstracts/" as *;
+
+.hero {
+  &__inner {
+    display: flex;
+    column-gap: 42px;
+    height: calc(100vh - 60px);
+    padding-block: 60px;
+  }
+
+  &__vertical {
+    &-container {
+      display: flex;
+      align-items: center;
+      column-gap: 12px;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 16px;
+      transform: rotate(180deg);
+      writing-mode: vertical-lr;
+
+      span {
+        white-space: nowrap;
+      }
+    }
+
+    &-line {
+      display: inline-block;
+      width: 1px;
+      height: 100%;
+      background-color: var(--color-white);
+    }
+  }
+
+  &__body {
+    display: flex;
+    column-gap: 40px;
+    padding-inline: 20px;
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px;
+      padding-top: 100px;
+    }
+  }
+
+  &__scroll-down {
+    display: inline-flex;
+    column-gap: 8px;
+    margin-top: auto;
+
+    @include hover {
+      color: var(--color-accent);
+    }
+  }
+
+  &__image {
+    object-fit: cover;
+
+    &--center {
+      margin-block: auto;
+    }
+  }
+
+  &__image-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  &__description {
+    max-width: 220px;
+    max-height: 72px;
+    text-align: end;
+  }
+}

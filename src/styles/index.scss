@@ -3,11 +3,15 @@
 
 // Base
 @use "./base/fonts";
+@use "./base/typography";
 @use "./base/base";
 
 // Components
 @use "./components/logo";
 @use "./components/burger-menu";
+@use "./components/metrics";
+@use "./components/icon";
 
 // Layout
 @use "./layout/header";
+@use "./layout/hero";

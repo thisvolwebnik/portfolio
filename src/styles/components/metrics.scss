@@ -1,0 +1,30 @@
+@use "../abstracts/" as *;
+
+.metrics {
+  &__list {
+    display: flex;
+    column-gap: 60px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: start;
+    row-gap: 14px;
+    padding-left: 30px;
+  }
+
+  &__value {
+    position: relative;
+    font-family: var(--font-family-accent);
+    font-size: 48px;
+    font-weight: 300;
+
+    &::before {
+      content: "+";
+      position: absolute;
+      top: 0;
+      right: 110%;
+    }
+  }
+}
