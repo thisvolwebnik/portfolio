@@ -3,9 +3,13 @@
 .hero {
   &__inner {
     display: flex;
-    column-gap: 42px;
+    column-gap: 20px;
     height: calc(100vh - 60px);
     padding-block: var(--section-padding-block);
+
+    @include mobile {
+      height: 100%;
+    }
   }
 
   &__vertical {
@@ -35,13 +39,31 @@
   &__body {
     display: flex;
     column-gap: 40px;
-    padding-inline: 20px;
+    padding-left: 20px;
+
+    @include tablet {
+      column-gap: 20px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 20px;
+      padding-left: 0;
+    }
 
     &-container {
       display: flex;
       flex-direction: column;
       row-gap: 40px;
       padding-top: 100px;
+
+      @include mobile {
+        max-width: 410px;
+      }
+
+      @include mobile {
+        padding-top: 0;
+      }
     }
   }
 
@@ -60,6 +82,10 @@
 
     &--center {
       margin-block: auto;
+
+      @include laptop {
+        display: none;
+      }
     }
   }
 
@@ -68,6 +94,12 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: end;
+    row-gap: 60px;
+
+    img {
+      max-width: fluid-to-laptop(280, 220);
+      height: auto;
+    }
   }
 
   &__description {

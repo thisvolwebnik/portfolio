@@ -1,3 +1,5 @@
+@use "../abstracts/" as *;
+
 h1,
 .h1,
 h2,
@@ -10,9 +12,10 @@ h3,
 
 h1,
 .h1 {
-  font-size: 116px;
+  @include fluid-text(116, 56);
+
   font-weight: 300;
-  line-height: 132px;
+  line-height: fluid(132, 64);
 }
 
 h2,

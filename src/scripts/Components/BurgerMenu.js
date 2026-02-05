@@ -7,6 +7,7 @@ class BurgerMenu {
 
   stateClasses = {
     isActive: "is-active",
+    isLook: "is-look",
   };
 
   constructor() {
@@ -23,6 +24,7 @@ class BurgerMenu {
   onClickBurgerButton = () => {
     this.burgerButtonElement.classList.toggle(this.stateClasses.isActive);
     this.overlayElement.classList.toggle(this.stateClasses.isActive);
+    document.documentElement.classList.toggle(this.stateClasses.isLook);
   };
 
   bindEvents() {

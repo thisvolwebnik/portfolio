@@ -7,20 +7,43 @@
 
   &__grid {
     display: grid;
-    column-gap: 40px;
+    gap: 40px;
 
     &--3-cols {
       grid-template-columns: repeat(3, 1fr);
+
+      @include laptop {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+      }
+
+      @include tablet {
+        grid-template-columns: repeat(1, 1fr);
+      }
     }
   }
 
   &__card {
     display: flex;
     flex-direction: column;
+    align-items: center;
     row-gap: 40px;
 
     &--revers {
       flex-direction: column-reverse;
+    }
+
+    &-image {
+      width: 100%;
+      height: auto;
+
+      @include tablet {
+        max-width: 728px;
+      }
+
+      @include mobile {
+        max-width: 340px;
+      }
     }
 
     &-body {

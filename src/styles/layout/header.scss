@@ -15,9 +15,11 @@
       @include flex-center;
 
       position: fixed;
+      z-index: 100;
       inset: 60px 0 0 100%;
       width: 100%;
       height: calc(100vh - 60px);
+      background-color: var(--color-dark);
       transition-duration: 0.4s;
 
       &.is-active {

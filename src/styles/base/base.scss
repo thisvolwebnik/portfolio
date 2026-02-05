@@ -6,6 +6,12 @@
   padding: 0;
 }
 
+html {
+  &.is-look {
+    overflow: hidden;
+  }
+}
+
 body {
   overflow-x: hidden;
   font-family: var(--font-family-base);
@@ -47,6 +53,30 @@ svg * {
 
 .visually-hidden {
   @include visually-hidden;
+}
+
+.visible-tablet {
+  @include tablet-above {
+    display: none !important;
+  }
+}
+
+.hidden-tablet {
+  @include tablet {
+    display: none !important;
+  }
+}
+
+.visible-mobile {
+  @include mobile-above {
+    display: none !important;
+  }
+}
+
+.hidden-mobile {
+  @include mobile {
+    display: none !important;
+  }
 }
 
 :focus-visible {
