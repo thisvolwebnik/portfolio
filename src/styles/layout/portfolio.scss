@@ -1,0 +1,18 @@
+@use "../abstracts/" as *;
+
+.portfolio {
+  padding-block: var(--section-padding-block);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    width: 100%;
+  }
+}

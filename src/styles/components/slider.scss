@@ -1,0 +1,23 @@
+@use "../abstracts/" as *;
+
+.slider {
+  overflow-x: hidden;
+
+  &__line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    height: 654px;
+  }
+
+  &__item {
+    &--down {
+      margin-top: auto;
+    }
+
+    &--up {
+      margin-bottom: auto;
+    }
+  }
+}

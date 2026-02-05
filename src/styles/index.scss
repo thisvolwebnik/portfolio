@@ -11,8 +11,10 @@
 @use "./components/burger-menu";
 @use "./components/metrics";
 @use "./components/icon";
+@use "./components/slider";
 
 // Layout
 @use "./layout/header";
 @use "./layout/hero";
 @use "./layout/about";
+@use "./layout/portfolio";
