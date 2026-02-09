@@ -12,9 +12,11 @@
 @use "./components/metrics";
 @use "./components/icon";
 @use "./components/slider";
+@use "./components/card";
 
 // Layout
 @use "./layout/header";
 @use "./layout/hero";
 @use "./layout/about";
 @use "./layout/portfolio";
+@use "./layout/pricing";
