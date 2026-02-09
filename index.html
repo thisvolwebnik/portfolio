@@ -333,7 +333,7 @@
               </p>
             </div>
           </header>
-          <div class="pricing__body">
+          <div class="pricing__body" data-js-pricing>
             <ul class="pricing__list">
               <li class="pricing__item">
                 <div class="pricing__card card">
@@ -352,7 +352,11 @@
                     <div class="card__description">
                       <p>For short sessions and quick results</p>
                     </div>
-                    <button class="card__button button" type="button">
+                    <button
+                      class="card__button button"
+                      type="button"
+                      data-js-pricing-button
+                    >
                       Book now
                     </button>
                   </div>
@@ -377,7 +381,11 @@
                     <div class="card__description">
                       <p>Perfect for couples, portraits, or lifestyle</p>
                     </div>
-                    <button class="card__button button" type="button">
+                    <button
+                      class="card__button button"
+                      type="button"
+                      data-js-pricing-button
+                    >
                       Book now
                     </button>
                   </div>
@@ -405,7 +413,11 @@
                     <div class="card__description">
                       <p>For when you want to capture everything</p>
                     </div>
-                    <button class="card__button button" type="button">
+                    <button
+                      class="card__button button"
+                      type="button"
+                      data-js-pricing-button
+                    >
                       Book now
                     </button>
                   </div>
@@ -433,7 +445,11 @@
                     <div class="card__description">
                       <p>Full-day or partial wedding coverage</p>
                     </div>
-                    <button class="card__button button" type="button">
+                    <button
+                      class="card__button button"
+                      type="button"
+                      data-js-pricing-button
+                    >
                       Book now
                     </button>
                   </div>
@@ -443,16 +459,21 @@
           </div>
         </div>
       </section>
-      <div class="modal">
+      <div class="modal" data-js-modal>
         <div class="modal__body">
           <h2 class="modal__title h3">
             Like my portfolio? Sign up for a shoot!
           </h2>
           <div class="modal__form">
             <label class="visually-hidden" for="name">Your Name</label>
-            <input class="modal__input" type="text" placeholder="your name" />
+            <input
+              class="modal__input"
+              id="name"
+              type="text"
+              placeholder="your name"
+            />
             <label class="visually-hidden" for="phone">Your phone number</label>
-            <input class="modal__input" type="tel" value="+1" />
+            <input class="modal__input" id="phone" type="tel" value="+1" />
             <button class="modal__button button" type="submit">book now</button>
           </div>
           <button
@@ -460,6 +481,7 @@
             type="button"
             title="Close modal"
             aria-label="Close title"
+            data-js-modal-cross
           >
             <span class="cross__line"></span>
             <span class="cross__line"></span>

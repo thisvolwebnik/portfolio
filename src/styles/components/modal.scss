@@ -2,7 +2,8 @@
 
 .modal {
   position: fixed;
-  z-index: 1000;
+
+  // z-index: 1000;
   inset: 0;
   display: flex;
   justify-content: center;
@@ -10,9 +11,10 @@
   background-color: rgba(34, 34, 34, 0.6);
   opacity: 0;
   transition-duration: var(--transition-duration);
-  transform: scale(0.9);
+  transform: scale(0);
 
   &.is-active {
+    display: flex;
     opacity: 1;
     transform: scale(1);
   }
