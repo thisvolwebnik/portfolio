@@ -1,0 +1,73 @@
+@use "../abstracts/" as *;
+
+.modal {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(34, 34, 34, 0.6);
+  opacity: 0;
+  transition-duration: var(--transition-duration);
+  transform: scale(0.9);
+
+  &.is-active {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  &__body {
+    position: relative;
+    display: grid;
+    row-gap: 12px;
+    min-width: 500px;
+    padding: 60px;
+    text-align: center;
+    color: var(--color-dark);
+    background-color: var(--color-white);
+
+    @include mobile {
+      min-width: 340px;
+      padding-inline: 20px;
+    }
+  }
+
+  &__form {
+    display: grid;
+    row-gap: 12px;
+  }
+
+  &__input {
+    width: 100%;
+    height: var(--input-height);
+    padding: 18px 12px;
+    font-family: var(--font-family-accent);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    border: var(--border);
+
+    @include hover {
+      border-color: var(--color-accent);
+    }
+
+    &::placeholder {
+      font-family: var(--font-family-accent);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__button {
+    color: var(--color-white);
+    background-color: var(--color-dark);
+
+    @include hover {
+      background-color: var(--color-accent);
+    }
+  }
+}

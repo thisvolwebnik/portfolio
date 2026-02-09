@@ -1,0 +1,41 @@
+@use "../abstracts/" as *;
+
+.cross {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition-duration: var(--transition-duration);
+
+  @include hover {
+    transform: rotate(90deg);
+
+    .cross__line {
+      background-color: var(--color-accent);
+    }
+  }
+
+  &__line {
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: var(--color-dark);
+    border-radius: 10px;
+    transition-duration: var(--transition-duration);
+
+    &:first-child {
+      transform: rotate(45deg);
+    }
+
+    &:last-child {
+      transform: rotate(-45deg);
+    }
+  }
+}
