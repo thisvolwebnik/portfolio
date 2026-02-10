@@ -15,6 +15,7 @@
 @use "./components/card";
 @use "./components/modal";
 @use "./components/cross";
+@use "./components/accordion";
 
 // Layout
 @use "./layout/header";
@@ -22,3 +23,4 @@
 @use "./layout/about";
 @use "./layout/portfolio";
 @use "./layout/pricing";
+@use "./layout/questions";

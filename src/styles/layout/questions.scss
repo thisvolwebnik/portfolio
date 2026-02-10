@@ -1,0 +1,21 @@
+@use "../abstracts/" as *;
+
+.questions {
+  padding-block: var(--section-padding-block);
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+  }
+}
