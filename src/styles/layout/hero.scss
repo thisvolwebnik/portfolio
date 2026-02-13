@@ -1,6 +1,8 @@
 @use "../abstracts/" as *;
 
 .hero {
+  padding-top: 60px;
+
   &__inner {
     display: flex;
     column-gap: 20px;
