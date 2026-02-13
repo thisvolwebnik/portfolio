@@ -17,7 +17,7 @@ export default {
   ],
   defaultSeverity: "warning",
   extends: ["stylelint-config-standard-scss"],
-  plugins: ["stylelint-scss", "stylelint-order", "stylelint-selector-bem-pattern"],
+  plugins: ["stylelint-scss", "stylelint-order"],
   rules: {
     "font-family-name-quotes": "always-unless-keyword",
     "color-hex-length": "long",
@@ -227,9 +227,6 @@ export default {
       "stroke-dasharray",
       "stroke-dashoffset",
     ],
-    "plugin/selector-bem-pattern": {
-      preset: "bem",
-    },
     "no-descending-specificity": null,
     "value-keyword-case": [
       "lower",
