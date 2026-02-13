@@ -1,0 +1,93 @@
+@use "../abstracts/" as *;
+
+.footer {
+  &__header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: var(--color-dark);
+    background-color: var(--color-white);
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+  }
+
+  &__input {
+    width: 100%;
+    max-width: 380px;
+    height: var(--input-height);
+    padding: 18px 12px;
+    font-family: var(--font-family-accent);
+    font-weight: 400;
+    font-style: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    border: var(--border);
+
+    @include hover {
+      border-color: var(--color-accent);
+    }
+
+    &::placeholder {
+      font-family: var(--font-family-accent);
+      font-weight: 400;
+      font-style: 16px;
+      line-height: 24px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    max-width: 200px;
+    height: var(--button-height);
+    font-family: var(--font-family-accent);
+    font-weight: 400;
+    font-style: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: var(--color-white);
+    background-color: var(--color-dark);
+    border: none;
+
+    @include hover {
+      background-color: var(--color-accent);
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 20px;
+    list-style-type: none;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-inline: 20px;
+    font-family: var(--font-family-accent);
+    text-transform: uppercase;
+
+    @include hover {
+      color: var(--color-accent);
+    }
+  }
+}
