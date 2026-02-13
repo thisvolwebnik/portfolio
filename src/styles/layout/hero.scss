@@ -71,6 +71,8 @@
     display: inline-flex;
     column-gap: 8px;
     margin-top: auto;
+    cursor: pointer;
+    transition-duration: var(--transition-duration);
 
     @include hover {
       color: var(--color-accent);
